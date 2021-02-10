@@ -39,69 +39,67 @@
             .smaller-image {
                 width: 272px;
                 display: block;
-                position:fixed
+                margin: auto;
             }
 
             .navbar {
-                height: 50px;
-                width: 1225px;
+                height: 46px;
+                width: 1250px;
             }
             .googleimg {
-                height: 100px;
-                width: 1225px;
+                margin: auto;
             }
             .searchbar {
-                height: 250px;
-                width: 1225px;
+                margin-top: 25px;
+                margin-bottom: 250px;
+            }
+
+            .button {
+                margin-top: 25px;
             }
 
             .bottom-navbar {
-                height: 75px;
-                width: 1225px;
+                height: 40px;
+                width: 1270px;
+                background-color: #dddddd;
             }
 
             form {
                 text-align: center;
             }
 
-            footer {
-                display: block;
-                float: left;
-                padding: 8px;
-            }
-
             .bottom-left {
-                position: absolute;
-                bottom: 0px;
                 float: left;
                 display: block;
                 padding: 8px;
             }
 
             .bottom-center {
-                position: absolute;
+                position: relative;
+                left: 300px;
                 bottom: 0px;
             }
 
             .bottom-right {
-                position: absolute;
-                bottom: 0px;
                 float: right;
                 display: block;
                 padding: 8px;
             }
+
         </style>
 <!--these are the top most links-->
     <div class="navbar">
-        <ul>
-            <li><a class="float-left class1" href="#">About</a></li>
-            <li><a class="float-left class1" href="#">Store</a></li>
+        <nav>
+            <ul>
+                <li><a class="float-left class1" href="#">About</a></li>
+                <li><a class="float-left class1" href="#">Store</a></li>
             
-            <li><a class="float-right class1" href="#">Sign in</a></li>
-            <li><a class="float-right class1" href="#">Google Apps</a></li>
-            <li><a class="float-right class1" href="#">Images</a></li>
-            <li><a class="float-right class1" href="#">Gmail</a></li>
-        </ul>
+                <li><a class="float-right class1" href="#">Sign in</a></li>
+                <li><a class="float-right class1" href="#">Google Apps</a></li>
+                <li><a class="float-right class1" href="#">Images</a></li>
+                <li><a class="float-right class1" href="#">Gmail</a></li>
+            </ul>
+        </nav>
     </div>
 
 <!--this is the google logo and center link-->
@@ -111,26 +109,32 @@
 
     <div class="searchbar">
         <form action="search">
-            <input type="text">
-            <button type="submit">Google Search</button>
-            <button type="submit">I'm Feeling Lucky</button>
-        </form>
+            <div>
+                <input type="text">
+            </div>
+            <div>
+                <button class="button" type="submit">Google Search</button>
+                <button class="button" type="submit">I'm Feeling Lucky</button>
+            </div>
+            </form>
     </div>
 
 <!--these are the bottom most links-->
      <footer> 
         <div class="bottom-navbar">  
-            <ul>
-                <li><a class="class2" href="#">Advertising</a></li>
-                <li><a class="class2" href="#">Business</a></li>
-                <li><a class="class2" href="#">How Search Works</a></li>
+            <nav>
+                <ul>
+                    <li><a class="class2 bottom-left" href="#">Advertising</a></li>
+                    <li><a class="class2 bottom-left" href="#">Business</a></li>
+                    <li><a class="class2 bottom-left" href="#">How Search Works</a></li>
             
-                <li><a class="class2" href="#">Carbon neutral since 2007</a></li>
-            
-                <li><a class="class2" href="#">Privacy</a></li>
-                <li><a class="class2" href="#">Terms</a></li>
-                <li><a class="class2" href="#">Settings</a></li>
-            </ul>
+                    <li><a class="class2 bottom-center" href="#">Carbon neutral since 2007</a></li>
+                
+                    <li><a class="class2 bottom-right" href="#">Settings</a></li>
+                    <li><a class="class2 bottom-right" href="#">Terms</a></li>
+                    <li><a class="class2 bottom-right" href="#">Privacy</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
     </body>
